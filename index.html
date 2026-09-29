@@ -1,0 +1,642 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Marco Restaurant</title>
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+  </head>
+
+  <body class="font-sans text-gray-800">
+    <!-- ================= NAVBAR + HERO ================= -->
+
+    <header
+      class="min-h-[650px] bg-cover bg-center"
+      style="
+        background-image:
+          linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+          url(&quot;https://images.unsplash.com/photo-1515003197210-e0cd71810b5f?auto=format&fit=crop&w=1800&q=85&quot;);
+      "
+    >
+      <div class="max-w-6xl mx-auto px-5">
+        <!-- Navbar -->
+        <nav class="h-28 flex items-center justify-between">
+          <!-- Logo -->
+          <a href="#" class="text-white font-black text-2xl"> MARCO </a>
+
+          <!-- Links -->
+          <ul
+            class="hidden md:flex items-center gap-7 text-white text-xs uppercase"
+          >
+            <li>
+              <a href="#" class="hover:text-red-500"> Home </a>
+            </li>
+
+            <li>
+              <a href="#about" class="hover:text-red-500"> About </a>
+            </li>
+
+            <li>
+              <a href="#menu" class="hover:text-red-500"> Menu </a>
+            </li>
+
+            <li>
+              <a href="#gallery" class="hover:text-red-500"> Gallery </a>
+            </li>
+
+            <li>
+              <a href="#blog" class="hover:text-red-500"> Blog </a>
+            </li>
+
+            <li>
+              <a href="#contact" class="hover:text-red-500"> Contact </a>
+            </li>
+          </ul>
+
+          <!-- Mobile Button -->
+          <button class="md:hidden text-white text-2xl">
+            <i class="fa-solid fa-bars"></i>
+          </button>
+        </nav>
+
+        <!-- Hero Content -->
+        <div class="pt-28 md:pt-32 max-w-xl text-white">
+          <p class="uppercase tracking-[4px] text-xs mb-4">
+            Nice options of choice
+          </p>
+
+          <h1 class="text-4xl md:text-6xl font-bold mb-5">Delicious Recipes</h1>
+
+          <p class="text-sm md:text-base leading-7 text-gray-200 mb-7">
+            Discover delicious food prepared with fresh ingredients. Enjoy our
+            special recipes and wonderful meals made especially for you.
+          </p>
+
+          <a
+            href="#menu"
+            class="inline-block bg-red-500 hover:bg-red-600 text-white uppercase text-xs font-bold px-7 py-4"
+          >
+            Check Our Menu
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <!-- ================= ABOUT ================= -->
+
+    <section id="about" class="py-20 bg-white">
+      <div
+        class="max-w-6xl mx-auto px-5 grid md:grid-cols-2 gap-14 items-center"
+      >
+        <!-- Text -->
+        <div>
+          <h2 class="text-2xl md:text-3xl font-bold mb-5">About Our Story</h2>
+
+          <p class="text-gray-500 leading-7 text-sm mb-6">
+            We are a restaurant dedicated to serving delicious meals made from
+            fresh ingredients. Our chefs create tasty recipes with passion and
+            attention to every detail.
+          </p>
+
+          <p class="text-gray-500 leading-7 text-sm mb-7">
+            Come and enjoy a warm atmosphere, friendly service and food you will
+            want to try again.
+          </p>
+
+          <a
+            href="#menu"
+            class="inline-block bg-red-500 hover:bg-red-600 text-white uppercase text-xs font-bold px-6 py-3"
+          >
+            View Full Menu
+          </a>
+        </div>
+
+        <!-- Image -->
+        <div>
+          <img
+            src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=900&q=85"
+            alt="Burger"
+            class="w-full h-[300px] object-cover"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= MENU ================= -->
+
+    <section id="menu" class="py-20 bg-slate-50">
+      <div class="max-w-5xl mx-auto px-5">
+        <!-- Section Title -->
+        <div class="text-center mb-10">
+          <h2 class="text-2xl md:text-3xl font-bold mb-3">
+            What kind of Foods we serve for you
+          </h2>
+
+          <p class="text-gray-400 text-sm">
+            Who are in extremely love with eco friendly system.
+          </p>
+        </div>
+
+        <!-- Categories -->
+
+        <div class="flex flex-wrap justify-center bg-white shadow-sm mb-7">
+          <button class="px-8 py-5 bg-red-500 text-white text-xs uppercase">
+            Menu
+          </button>
+
+          <button class="px-8 py-5 hover:bg-gray-100 text-xs uppercase">
+            Breakfast
+          </button>
+
+          <button class="px-8 py-5 hover:bg-gray-100 text-xs uppercase">
+            Lunch
+          </button>
+
+          <button class="px-8 py-5 hover:bg-gray-100 text-xs uppercase">
+            Dinner
+          </button>
+
+          <button class="px-8 py-5 hover:bg-gray-100 text-xs uppercase">
+            Budget Meal
+          </button>
+
+          <button class="px-8 py-5 hover:bg-gray-100 text-xs uppercase">
+            Buffet
+          </button>
+        </div>
+
+        <!-- Menu Items -->
+
+        <div class="grid md:grid-cols-2 gap-2">
+          <!-- Item -->
+          <div class="bg-white p-6 flex justify-between">
+            <div>
+              <h3 class="font-bold text-sm mb-2">Cappuccino</h3>
+
+              <p class="text-xs text-gray-400">
+                Usage of the Internet is becoming more common.
+              </p>
+            </div>
+
+            <span class="text-red-500 text-xs font-bold"> $49 </span>
+          </div>
+
+          <!-- Item -->
+          <div class="bg-white p-6 flex justify-between">
+            <div>
+              <h3 class="font-bold text-sm mb-2">Americano</h3>
+
+              <p class="text-xs text-gray-400">
+                Usage of the Internet is becoming more common.
+              </p>
+            </div>
+
+            <span class="text-red-500 text-xs font-bold"> $49 </span>
+          </div>
+
+          <!-- Item -->
+          <div class="bg-white p-6 flex justify-between">
+            <div>
+              <h3 class="font-bold text-sm mb-2">Macchiato</h3>
+
+              <p class="text-xs text-gray-400">
+                Usage of the Internet is becoming more common.
+              </p>
+            </div>
+
+            <span class="text-red-500 text-xs font-bold"> $19 </span>
+          </div>
+
+          <!-- Item -->
+          <div class="bg-white p-6 flex justify-between">
+            <div>
+              <h3 class="font-bold text-sm mb-2">Mocha</h3>
+
+              <p class="text-xs text-gray-400">
+                Usage of the Internet is becoming more common.
+              </p>
+            </div>
+
+            <span class="text-red-500 text-xs font-bold"> $49 </span>
+          </div>
+
+          <!-- Item -->
+          <div class="bg-white p-6 flex justify-between">
+            <div>
+              <h3 class="font-bold text-sm mb-2">Piccolo Latte</h3>
+
+              <p class="text-xs text-gray-400">
+                Usage of the Internet is becoming more common.
+              </p>
+            </div>
+
+            <span class="text-red-500 text-xs font-bold"> $19 </span>
+          </div>
+
+          <!-- Item -->
+          <div class="bg-white p-6 flex justify-between">
+            <div>
+              <h3 class="font-bold text-sm mb-2">Ristretto</h3>
+
+              <p class="text-xs text-gray-400">
+                Usage of the Internet is becoming more common.
+              </p>
+            </div>
+
+            <span class="text-red-500 text-xs font-bold"> $19 </span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= RESERVATION ================= -->
+
+    <section
+      class="py-24 bg-cover bg-center"
+      style="
+        background-image:
+          linear-gradient(rgba(0, 0, 0, 0.68), rgba(0, 0, 0, 0.68)),
+          url(&quot;https://images.unsplash.com/photo-1579684947550-22e945225d9a?auto=format&fit=crop&w=1800&q=85&quot;);
+      "
+    >
+      <div
+        class="max-w-6xl mx-auto px-5 grid md:grid-cols-2 gap-12 items-center"
+      >
+        <!-- Text -->
+
+        <div class="text-white">
+          <h2 class="text-3xl font-bold max-w-md mb-5">
+            Reserve Your Seats to Confirm If You Come with Your Family
+          </h2>
+
+          <p class="text-gray-300 text-sm leading-7 max-w-lg">
+            Reserve your table and enjoy delicious food with your family and
+            friends. Fill in the form and we will confirm your reservation.
+          </p>
+        </div>
+
+        <!-- Form -->
+
+        <form class="bg-white p-8 max-w-md w-full md:ml-auto">
+          <input
+            type="text"
+            placeholder="Your Name"
+            class="w-full border-b py-4 outline-none text-sm"
+          />
+
+          <input
+            type="email"
+            placeholder="Your Email Address"
+            class="w-full border-b py-4 outline-none text-sm"
+          />
+
+          <input
+            type="text"
+            placeholder="Phone Number"
+            class="w-full border-b py-4 outline-none text-sm"
+          />
+
+          <input
+            type="date"
+            class="w-full border-b py-4 outline-none text-sm"
+          />
+
+          <select
+            class="w-full border-b py-4 outline-none text-sm text-gray-500"
+          >
+            <option>Select Event</option>
+
+            <option>Birthday</option>
+
+            <option>Family Dinner</option>
+
+            <option>Business Dinner</option>
+          </select>
+
+          <button
+            type="submit"
+            class="w-full mt-6 bg-red-500 hover:bg-red-600 text-white py-4 text-xs uppercase font-bold"
+          >
+            Make Reservation
+          </button>
+        </form>
+      </div>
+    </section>
+
+    <!-- ================= GALLERY ================= -->
+
+    <section id="gallery" class="py-20 bg-slate-50">
+      <div class="max-w-5xl mx-auto px-5">
+        <div class="text-center mb-10">
+          <h2 class="text-2xl md:text-3xl font-bold mb-3">
+            Food and Customer Gallery
+          </h2>
+
+          <p class="text-gray-400 text-sm">
+            Who are in extremely love with eco friendly system.
+          </p>
+        </div>
+
+        <!-- Categories -->
+
+        <div class="flex flex-wrap justify-center bg-white shadow-sm mb-7">
+          <button class="px-8 py-5 bg-red-500 text-white text-xs uppercase">
+            Menu
+          </button>
+
+          <button class="px-8 py-5 hover:bg-gray-100 text-xs uppercase">
+            Breakfast
+          </button>
+
+          <button class="px-8 py-5 hover:bg-gray-100 text-xs uppercase">
+            Lunch
+          </button>
+
+          <button class="px-8 py-5 hover:bg-gray-100 text-xs uppercase">
+            Dinner
+          </button>
+
+          <button class="px-8 py-5 hover:bg-gray-100 text-xs uppercase">
+            Budget Meal
+          </button>
+
+          <button class="px-8 py-5 hover:bg-gray-100 text-xs uppercase">
+            Buffet
+          </button>
+        </div>
+
+        <!-- Gallery -->
+
+        <div class="grid grid-cols-2 md:grid-cols-3 gap-3">
+          <img
+            class="w-full h-44 object-cover"
+            src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=700&q=85"
+            alt="Food"
+          />
+
+          <img
+            class="w-full h-44 object-cover"
+            src="https://images.unsplash.com/photo-1565958011703-44f9829ba187?auto=format&fit=crop&w=700&q=85"
+            alt="Cake"
+          />
+
+          <img
+            class="w-full h-44 object-cover"
+            src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=700&q=85"
+            alt="Burger"
+          />
+
+          <img
+            class="w-full h-44 object-cover"
+            src="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=700&q=85"
+            alt="Steak"
+          />
+
+          <img
+            class="w-full h-44 object-cover"
+            src="https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=700&q=85"
+            alt="Salad"
+          />
+
+          <img
+            class="w-full h-44 object-cover"
+            src="https://images.unsplash.com/photo-1579871494447-9811cf80d66c?auto=format&fit=crop&w=700&q=85"
+            alt="Sushi"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= TESTIMONIAL ================= -->
+
+    <section
+      class="py-24 bg-cover bg-center"
+      style="
+        background-image:
+          linear-gradient(rgba(255, 255, 255, 0.88), rgba(255, 255, 255, 0.88)),
+          url(&quot;https://images.unsplash.com/photo-1505253716362-afaea1d3d1af?auto=format&fit=crop&w=1800&q=85&quot;);
+      "
+    >
+      <div class="max-w-2xl mx-auto text-center px-5">
+        <img
+          src="https://i.pravatar.cc/100?img=47"
+          class="w-16 h-16 rounded-full mx-auto mb-4"
+          alt="Customer"
+        />
+
+        <h3 class="font-bold text-sm">Hilda Sutton</h3>
+
+        <div class="text-yellow-500 text-sm mb-4">
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+        </div>
+
+        <p class="text-gray-500 text-sm leading-7">
+          We absolutely loved the food and the atmosphere. Everything was fresh,
+          delicious and beautifully presented. We will definitely come again.
+        </p>
+      </div>
+    </section>
+
+    <!-- ================= BLOG ================= -->
+
+    <section id="blog" class="py-20 bg-white">
+      <div class="max-w-5xl mx-auto px-5">
+        <div class="text-center mb-12">
+          <h2 class="text-2xl md:text-3xl font-bold mb-3">
+            Latest From Our Blog
+          </h2>
+
+          <p class="text-gray-400 text-sm">
+            Latest recipes, food stories and restaurant news.
+          </p>
+        </div>
+
+        <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
+          <!-- Blog 1 -->
+
+          <article>
+            <img
+              class="w-full h-32 object-cover mb-4"
+              src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=500&q=85"
+              alt=""
+            />
+
+            <span class="text-[9px] bg-gray-900 text-white px-2 py-1">
+              Food
+            </span>
+
+            <h3 class="font-bold text-sm mt-3">
+              Cooking Perfect Fried Rice in minutes
+            </h3>
+
+            <p class="text-xs text-gray-400 mt-2">
+              Simple tips to make delicious food.
+            </p>
+          </article>
+
+          <!-- Blog 2 -->
+
+          <article>
+            <img
+              class="w-full h-32 object-cover mb-4"
+              src="https://images.unsplash.com/photo-1555507036-ab1f4038808a?auto=format&fit=crop&w=500&q=85"
+              alt=""
+            />
+
+            <span class="text-[9px] bg-gray-900 text-white px-2 py-1">
+              Recipe
+            </span>
+
+            <h3 class="font-bold text-sm mt-3">
+              Secret of making Heart Shaped eggs
+            </h3>
+
+            <p class="text-xs text-gray-400 mt-2">
+              Easy recipes for your breakfast.
+            </p>
+          </article>
+
+          <!-- Blog 3 -->
+
+          <article>
+            <img
+              class="w-full h-32 object-cover mb-4"
+              src="https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=500&q=85"
+              alt=""
+            />
+
+            <span class="text-[9px] bg-gray-900 text-white px-2 py-1">
+              Tips
+            </span>
+
+            <h3 class="font-bold text-sm mt-3">
+              How to check if it is tender or not
+            </h3>
+
+            <p class="text-xs text-gray-400 mt-2">
+              Useful cooking tips for everyone.
+            </p>
+          </article>
+
+          <!-- Blog 4 -->
+
+          <article>
+            <img
+              class="w-full h-32 object-cover mb-4"
+              src="https://images.unsplash.com/photo-1555507036-ab1f4038808a?auto=format&fit=crop&w=500&q=85"
+              alt=""
+            />
+
+            <span class="text-[9px] bg-gray-900 text-white px-2 py-1">
+              Blog
+            </span>
+
+            <h3 class="font-bold text-sm mt-3">
+              Sesame and black seed flavored Bun
+            </h3>
+
+            <p class="text-xs text-gray-400 mt-2">
+              Discover more delicious recipes.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer id="contact" class="bg-red-500 text-white">
+      <div class="max-w-6xl mx-auto px-5 py-16 grid md:grid-cols-3 gap-12">
+        <!-- Opening Hours -->
+
+        <div>
+          <h3 class="font-bold mb-5">Opening Hours</h3>
+
+          <div class="text-sm space-y-4 text-red-100">
+            <p class="flex justify-between gap-8">
+              <span>Monday - Friday</span>
+              <span>08:00 am - 10:00 pm</span>
+            </p>
+
+            <p class="flex justify-between gap-8">
+              <span>Saturday</span>
+              <span>08:00 am - 10:00 pm</span>
+            </p>
+
+            <p class="flex justify-between gap-8">
+              <span>Sunday</span>
+              <span>08:00 am - 10:00 pm</span>
+            </p>
+          </div>
+        </div>
+
+        <!-- Contact -->
+
+        <div>
+          <h3 class="font-bold mb-5">Contact Us</h3>
+
+          <p class="text-sm text-red-100 leading-7">
+            56/3, East road, Food Street
+            <br />
+            United States
+          </p>
+
+          <p class="text-xl font-bold mt-3">012-6532-569-9746</p>
+
+          <p class="text-xl font-bold">012-6532-569-9748</p>
+        </div>
+
+        <!-- Newsletter -->
+
+        <div>
+          <h3 class="font-bold mb-5">Newsletter</h3>
+
+          <p class="text-sm text-red-100 mb-5">
+            You can trust us. We only send promo offers.
+          </p>
+
+          <div class="flex">
+            <input
+              type="email"
+              placeholder="Your Email Address"
+              class="flex-1 px-4 py-3 text-gray-700 outline-none"
+            />
+
+            <button class="bg-gray-900 px-5">→</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Copyright -->
+
+      <div class="border-t border-red-400">
+        <div
+          class="max-w-6xl mx-auto px-5 py-5 flex flex-col md:flex-row justify-between gap-3 text-xs text-red-100"
+        >
+          <p>Copyright © 2026 Marco Restaurant. All rights reserved.</p>
+
+          <div class="flex gap-4">
+            <a href="#" class="hover:text-white"> Facebook </a>
+
+            <a href="#" class="hover:text-white"> Twitter </a>
+
+            <a href="#" class="hover:text-white"> Instagram </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
